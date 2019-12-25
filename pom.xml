@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.2.RELEASE</version>
+		<version>2.1.11.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
   <groupId>ru.vlapin.experiments</groupId>
+
   <artifactId>aeroport-igor</artifactId>
+
   <version>0.0.1-SNAPSHOT</version>
+
   <developers>
     <developer>
       <name>Vyacheslav Lapin</name>
       <organizationUrl>vlapin.ru</organizationUrl>
     </developer>
   </developers>
+
   <properties>
-    <java.version>13</java.version>
+    <java.version>12</java.version>
     <minimal.maven.version>3.6.1</minimal.maven.version>
     <!--region BOMs-->
     <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
@@ -27,12 +33,12 @@
     <vavr.version>0.10.2</vavr.version>
     <springfox-swagger.version>3.0.0-SNAPSHOT</springfox-swagger.version>
     <springfox-swagger-ui-rfc6570.version>1.0.0</springfox-swagger-ui-rfc6570.version>
-    <checker.version>3.0.0</checker.version>
+    <checker.version>3.0.1</checker.version>
     <annotations.version>18.0.0</annotations.version>
     <jcip-annotations.version>1.0</jcip-annotations.version>
     <spotbugs.version>4.0.0-beta1</spotbugs.version>
     <java-hamcrest.version>2.0.0.0</java-hamcrest.version>
-    <testcontainers.version>1.12.3</testcontainers.version>
+    <testcontainers.version>1.12.4</testcontainers.version>
     <!--endregion-->
     <!--region Plugins-->
     <maven.compiler.executable>true</maven.compiler.executable>
@@ -50,6 +56,7 @@
     <lombok-maven-plugin.version>1.18.8.1</lombok-maven-plugin.version>
     <!--endregion-->
   </properties>
+
   <repositories>
     <repository>
       <id>jcenter-snapshots</id>
@@ -57,6 +64,7 @@
       <url>http://oss.jfrog.org/artifactory/oss-snapshot-local/</url>
     </repository>
   </repositories>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -129,6 +137,7 @@
       <!--endregion-->
     </dependencies>
   </dependencyManagement>
+
   <dependencies>
     <dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -235,6 +244,7 @@
       <artifactId>feign-jackson</artifactId>
     </dependency>
   </dependencies>
+
   <build>
     <defaultGoal>spring-boot:run</defaultGoal>
     <pluginManagement>
@@ -477,6 +487,7 @@
       </plugin>
     </plugins>
   </build>
+
   <reporting>
     <plugins>
       <!--region org.jacoco:jacoco-maven-plugin-->
