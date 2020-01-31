@@ -48,7 +48,7 @@
     <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
     <maven-pmd-plugin.version>3.12.0</maven-pmd-plugin.version>
     <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
-    <checkstyle.version>8.20</checkstyle.version>
+    <checkstyle.version>8.29</checkstyle.version>
     <sonar-maven-plugin.version>2.7.1</sonar-maven-plugin.version>
     <jacoco-maven-plugin.version>0.8.4</jacoco-maven-plugin.version>
     <dockerfile-maven-plugin.version>1.4.10</dockerfile-maven-plugin.version>
